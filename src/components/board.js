@@ -47,13 +47,14 @@ const board = () => {
     let pc = "null";
     let rows = chessArray().map((value,key)=>{
         return(
-            <Grid.Row>
+            <Grid.Row key={num}>
                 {value.map((value,key)=>{
                     pc = getPiece(value);
                     curr = color(num,curr);
                     num++;   
                     return (
                         <Square 
+                            key = {pc+curr+num}
                             piece = {pc}
                             color = {curr}
                         />
