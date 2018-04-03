@@ -64,7 +64,7 @@ const board = () => {
         );
     })
     return(
-        <div>
+        <div >
             <Grid textAlign= "center">
                 {rows}
             </Grid>
